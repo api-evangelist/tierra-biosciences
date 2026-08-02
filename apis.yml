@@ -1,8 +1,24 @@
 aid: tierra-biosciences
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tierra-biosciences.png
 name: Tierra Biosciences
-description: 'Tierra Biosciences is a company surfaced as a portfolio company of prosus-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Tierra Biosciences is a San Leandro, California synthetic biology company using AI-guided,
+  cell-free protein production to synthesize custom proteins on demand for pharmaceutical, industrial,
+  and agricultural research. Its customer-facing Tierra Protein Platform is a web-based eCommerce
+  ordering portal where researchers enter protein sequences and get custom proteins synthesized,
+  validated, and shipped. The company (rebranding toward Revr Bio) is backed by prosus-ventures and
+  Material Impact. No public developer API, SDK, or programmatic-access surface is currently published;
+  this profile was enriched and confirmed as a web-platform-only provider.'
 url: https://raw.githubusercontent.com/api-evangelist/tierra-biosciences/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Frontier Tech
+- Synthetic Biology
+- Protein Synthesis
+- Biotechnology
+- Life Sciences
+- AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tierra-biosciences-domain-security.yml
 - type: Website
   url: https://tierrabiosciences.com
+- type: Login
+  url: https://proteinplatform.tierrabiosciences.com/account/login
+- type: TermsOfService
+  url: https://proteinplatform.tierrabiosciences.com/terms-of-service
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
